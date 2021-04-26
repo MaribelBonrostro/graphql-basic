@@ -10,4 +10,8 @@ export const typeDefs = gql`
     hello: String
     users: [User]
   }
+
+  type Mutation {
+    register(email: String!, password: String!): Boolean!
+  }
 `;
